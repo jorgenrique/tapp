@@ -1390,8 +1390,29 @@ button,
     .box.style1.left .inner {
       margin-right: 50%;
       padding-right: 3em; }
+  .box.sin-mariconada:before, .box.sin-mariconada:after {
+    display: none; }
+  .box.sin-mariconada .button {
+    color: #fff;
+    background-color: #F9A01B;
+    text-shadow: none;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    border: 1px solid transparent; }
+    .box.sin-mariconada .button:hover {
+      opacity: 0.5;
+      border: 1px solid #fff; }
   .box.style2 {
     text-align: center; }
+    .box.style2 .sponsors {
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .box.style2 .sponsors .sponsor {
+        width: 30%; }
+        .box.style2 .sponsors .sponsor img {
+          width: 100%; }
     .box.style2 header {
       display: inline-block;
       background: #fff;
@@ -1539,15 +1560,7 @@ button,
   color: #fff;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   text-align: center;
-  margin: 4.5em 0 0 0; }
-  #footer:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -4.5em;
-    left: 50%;
-    height: 4.5em;
-    border-left: solid 1px #fff; }
+  margin: 9em 0 0 0; }
   #footer a {
     color: #fff;
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
