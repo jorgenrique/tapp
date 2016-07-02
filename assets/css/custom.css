@@ -1,4 +1,19 @@
-@import: url(normalize.css);
+.flex-inline{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-wrap: no-wrap;
+}
+.flex-inline div{
+  display: block;
+  width: auto;
+}
+p{
+  color: gray;
+}
+ul{
+  padding:0px;
+}
 h1, h2{ color: #85D0CC !important}
 .btn{
   background-color: #F9A01B;
@@ -116,57 +131,90 @@ ul.nav.nav-tabs.tabs-product {
     display: flex;
     justify-content: center;
 }
-footer>.container>.navbar-nav>li>a{
-  padding:0px 10px;
+footer a{
+  padding-right:10px;
   color: #85D0CC;
 }
-footer>.container>.navbar-nav>li>a:hover, footer>.container>.navbar-nav>li>a:focus{
+footer a:hover, footer a:focus{
   color: #6c9593;
   background-color: transparent;
   border: 0px;
 }
-footer>.container{
+footer .container{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-footer>.container{
-    padding: 20px 0px;
 }
 footer>.container p{
     margin:0px;
 }
 footer{border-top:1px solid grey}
 footer>.container:before{display:none}
-footer .nav>li{
+footer li{
   display:inline-block;
 }
-/*form*/
-form{
-  margin-bottom: 4liem;
+footer .elementos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-form>*{
+footer p{
+  margin: 0px;
+}
+footer ul:last-of-type{
+  float: right;
+  background-color: red;
+}
+
+/*form*/
+.form-vertical *{
   width: 100%;
   display: inline-block;
+  position: relative;
 }
-form>input{
+form input{
   margin-bottom: 20px;
   padding: 10px 8px;
-}
-form>label:after{
-  content:'';
 }
 .explicacion-compra{
   text-align: center;
 }
 .fecha{
-  width:60%;
+  width:60% !important;
   float: left;
 }
 .cvv{
-  width:25%;
+  width:25% !important;
   float: right;
 }
 .paso{
-  padding: 50px 0px;
+  padding-bottom: 50px;
+}
+form .btn{
+  color: white;
+  display: block;
+  padding: 15px 100px;
+  margin: auto;
+}
+input:not(.btn) {
+  border: solid 2px #85D0CC;
+  border-radius: 3px;
+
+}
+label{
+  color: #85D0CC;
+}
+.paso .price{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+input:placholder{
+  color: gray;
+}
+.form_horizontal input{
+  width: auto !important;
+}
+.dispositivos{
+  width: 100%
 }

@@ -12,6 +12,33 @@
 			<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		<script type="text/javascript">
+		$(function() {
+
+			$(".dispositivo").append('<div class="inc button">+</div><div class="dec button">-</div>');
+
+			$(".button").on("click", function() {
+
+				var $button = $(this);
+				var oldValue = $button.parent().find("input").val();
+
+				if ($button.text() == "+") {
+					var newVal = parseFloat(oldValue) + 1;
+				} else {
+				 // Don't allow decrementing below zero
+					if (oldValue > 0) {
+						var newVal = parseFloat(oldValue) - 1;
+					} else {
+						newVal = 0;
+					}
+				}
+
+				$button.parent().find("input").val(newVal);
+
+			});
+
+			});
+		</script>
 			<div class="header">
 	          <div id="logo">
 	            <svg width="318px" height="152px" viewBox="0 0 318 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -35,7 +62,7 @@
 					<div class="col-lg-6 col-lg-offset-3">
 	          <h1>Hola</h1>
 	          <p>
-	            Por favor, ingresa los datos de tu tarjeta de crédito para comprar el dispositivo y empezar a usar Tapp.
+							Solo te falta decirnos a donde enviarlo y darnos un par de detalles de tu hogar,así la app te llegara lista para funcionar.
 	          </p>
 	        </div>
 				</div>
@@ -49,25 +76,29 @@
 			</div>
       <div class="row formulario">
 				<div class="container">
-					<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-	          <form class="form-vertical" action="index.html" method="post">
-							<div class="">
-								<label for="">Nombre en la tarjeta</label>
-		            <input type="text" name="nombre" placeholder="Helena">
+					<div>
+	          <form class="" action="index.html" method="post">
+							<div class="datos-hogar flex-inline">
+								<div class="">
+									<label for="">Dirección (Calle y número)</label>
+									<input type="text" name="nombre" placeholder="Helena">
+								</div>
+								<div class="">
+									<label for="">Ciudad y país</label>
+									<input type="text" name="numero" placeholder="xxxxxxxx">
+								</div>
+								<div class="">
+									<label for="">Código postal</label>
+									<input type="date" name="fecha" placholder="dd/mm/yy">
+								</div>
 							</div>
-							<div class="">
-								<label for="">Número en la tarjeta</label>
-		            <input type="text" name="numero" placeholder="xxxxxxxx">
+							<div class="dispositivos flex-inline">
+								<div class="dispositivo">
+									<label for=""></label>
+									<input type="text" name="name" value="1">
+								</div>
 							</div>
-							<div class="fecha">
-								<label for="">Fecha de expiración</label>
-		            <input type="date" name="fecha" placholder="dd/mm/yy">
-							</div>
-							<div class="cvv">
-								<label>CVV</label>
-		            <input type="text" name="cvv" placholder="">
-							</div>
-	            <input class="btn" type="submit" name="datos_tarjeta" value="Comprar" formaction="comprar-2.html">
+	            <input class="btn" type="button" name="datos_tarjeta" value="Comprar">
 	          </form>
 	        </div>
 				</div>
