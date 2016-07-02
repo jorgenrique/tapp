@@ -1,3 +1,5 @@
+@import: url(normalize.css);
+h1, h2{ color: #85D0CC !important}
 .btn{
   background-color: #F9A01B;
   border-color: #F9A01B;
@@ -21,21 +23,12 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.jumbotron .info-producto{
-  width: 45%;
-  float: left;
-}
-.img-product{
-  margin-left: 60px;
-  float: right;
-}
 .jumbotron .price{
   float:left;
   line-height: 46px;
   margin: 0px 50px 0px 0px;
   color: #85D0CC
 }
-.jumbotron h1{ color: #85D0CC}
 /*tabs*/
 .tabs-product{
   background-color: #85D0CC;
@@ -108,14 +101,14 @@
   color: #fff;
 }
 li{position:relative; display: inline-block}
-li.active:after, li:hover:after {
+.nav-tabs li.active:after, .nav-tabs li:hover:after {
     height: 5px;
     width: auto;
     display: block;
     background: #fff;
     content: '';
 }
-li:hover:after{background-color: rgba(255, 255, 255, 0.5);}
+.nav-tabs li:hover:after{background-color: rgba(255, 255, 255, 0.5);}
 .nav-tabs > li > a{
   margin-right: 0px;
 }
@@ -125,6 +118,12 @@ ul.nav.nav-tabs.tabs-product {
 }
 footer>.container>.navbar-nav>li>a{
   padding:0px 10px;
+  color: #85D0CC;
+}
+footer>.container>.navbar-nav>li>a:hover, footer>.container>.navbar-nav>li>a:focus{
+  color: #6c9593;
+  background-color: transparent;
+  border: 0px;
 }
 footer>.container{
   display: flex;
@@ -132,7 +131,6 @@ footer>.container{
   justify-content: space-between;
 }
 footer>.container{
-    line-height: 30px !important;
     padding: 20px 0px;
 }
 footer>.container p{
@@ -140,3 +138,35 @@ footer>.container p{
 }
 footer{border-top:1px solid grey}
 footer>.container:before{display:none}
+footer .nav>li{
+  display:inline-block;
+}
+/*form*/
+form{
+  margin-bottom: 4liem;
+}
+form>*{
+  width: 100%;
+  display: inline-block;
+}
+form>input{
+  margin-bottom: 20px;
+  padding: 10px 8px;
+}
+form>label:after{
+  content:'';
+}
+.explicacion-compra{
+  text-align: center;
+}
+.fecha{
+  width:60%;
+  float: left;
+}
+.cvv{
+  width:25%;
+  float: right;
+}
+.paso{
+  padding: 50px 0px;
+}
