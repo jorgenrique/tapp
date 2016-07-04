@@ -6,9 +6,9 @@
 }
 .right{
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
-    margin-top:20px;
+    margin:50px 0;
 }
 .flex-inline{
     display: flex;
@@ -164,6 +164,7 @@ ul.nav.nav-tabs.tabs-product {
 }
 #tab_default_3 img{
     box-shadow: 0px 0px 3px gray;
+    width:100%;
 }
 .explicacion-der p{text-align: left; padding-left: 1em;}
 .explicacion-izq p{text-align: right; padding-right: 1em;}
@@ -177,10 +178,10 @@ ul.nav.nav-tabs.tabs-product {
     top: 700px;
 }
 .explicacion-der p:first-of-type{
-    top:110px;
+    top:170px;
 }
 .explicacion-der p:nth-of-type(2){
-    top: 380px;
+    top: 530px;
 }
 .explicacion-der p:last-of-type{
     top: 950px;
@@ -441,8 +442,7 @@ input:placholder{
         color: #85D0CC
     }
     .img-product{
-        display: block;
-        margin: auto;
+        width:100%;
     }
     /*tabs*/
     .tabs-product{
@@ -548,21 +548,6 @@ input:placholder{
     .explicacion-izq p{text-align: right; padding-right: 1em;}
     .explicacion-der p, .explicacion-izq p{
         position:relative;
-    }
-    .explicacion-izq p:first-of-type{
-        top:360px;
-    }
-    .explicacion-izq p:last-of-type{
-        top: 700px;
-    }
-    .explicacion-der p:first-of-type{
-        top:110px;
-    }
-    .explicacion-der p:nth-of-type(2){
-        top: 380px;
-    }
-    .explicacion-der p:last-of-type{
-        top: 950px;
     }
     /*footer*/
     footer{
@@ -760,7 +745,6 @@ input:placholder{
         width: 95% !important;
     }
     .right{
-        justify-content:center;
         flex-direction:column;
     }
     .right .price{
@@ -768,5 +752,82 @@ input:placholder{
     }
     .right .btn{
         margin-bottom:30px;
+    }
+}
+@media(max-width:992px){
+    .explicacion-izq p:first-of-type{
+        top:270px;
+    }
+    .explicacion-izq p:last-of-type{
+        top: 520px;
+    }
+    .explicacion-der p:first-of-type{
+        top:110px;
+    }
+    .explicacion-der p:nth-of-type(2){
+        top: 380px;
+    }
+    .explicacion-der p:last-of-type{
+        top: 650px;
+    }
+}
+@media(max-width:600px){
+    .tab-content>.active{
+        position:relative;
+    }
+    #tab_default_3>*:not(:last-child){
+        width: 300px;
+        margin:auto;
+        float:none;
+    }
+    .explicacion-izq,
+    .explicacion-der{
+        position:absolute;
+        width:100% !important;
+        top:0;
+    }
+    .explicacion-izq p,
+    .explicacion-der p{
+        background-color:rgba(255,255,255,0.8);
+        position:absolute;
+        width:150px;
+    }
+    .explicacion-izq p:first-of-type{
+        top:330px;
+        left:0;
+    }
+    .explicacion-izq p:last-of-type{
+        top: 720px;
+        left:0;
+    }
+    .explicacion-der p:first-of-type{
+        top:110px;
+        right:0;
+    }
+    .explicacion-der p:nth-of-type(2){
+        top: 530px;
+        right:0;
+    }
+    .explicacion-der p:last-of-type{
+        top: 950px;
+        right:0;
+    }
+}
+
+@media(max-width:1200px){
+    .explicacion-izq p:first-of-type{
+        top:360px;
+    }
+    .explicacion-izq p:last-of-type{
+        top: 700px;
+    }
+    .explicacion-der p:first-of-type{
+        top:170px;
+    }
+    .explicacion-der p:nth-of-type(2){
+        top: 530px;
+    }
+    .explicacion-der p:last-of-type{
+        top: 950px;
     }
 }
