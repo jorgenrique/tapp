@@ -21,8 +21,9 @@ h1, h2{color: #85D0CC !important}
 .btn{
   background-color: #F9A01B;
   border-color: #F9A01B;
+  padding-left: 50px;
   padding-right: 50px;
-  padding-left:50px;
+  margin: 3em;
 }
 .btn:hover{
   background-color: #e18700;
@@ -100,11 +101,12 @@ h1, h2{color: #85D0CC !important}
   color: #404040;
 }
 .tabbable-line > .tab-content {
-  margin-top: -3px;
+  margin-top: 4em;
   background-color: #fff;
   border: 0;
   text-align: center;
 }
+
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
 }
@@ -137,6 +139,39 @@ li{position:relative; display: inline-block}
 ul.nav.nav-tabs.tabs-product {
     display: flex;
     justify-content: center;
+}
+#tab_default_3>*:not(:last-child){
+  width: 33%;
+  float: left;
+}
+#tab_default_3>*:last-child{
+  width: 100% !important;
+  float: none;
+  overflow: hidden;
+  padding: 3em 0px;
+}
+#tab_default_3 img{
+  box-shadow: 0px 0px 3px gray;
+}
+.explicacion-der p{text-align: left; padding-left: 1em;}
+.explicacion-izq p{text-align: right; padding-right: 1em;}
+.explicacion-der p, .explicacion-izq p{
+  position:relative;
+}
+.explicacion-izq p:first-of-type{
+  top:255px;
+}
+.explicacion-izq p:last-of-type{
+  top: 525px;
+}
+.explicacion-der p:first-of-type{
+  top:110px;
+}
+.explicacion-der p:nth-of-type(2){
+  top: 380px;
+}
+.explicacion-der p:last-of-type{
+  top: 700px;
 }
 /*footer*/
 footer{
