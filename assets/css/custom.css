@@ -1,20 +1,23 @@
 .flex-inline{
   display: flex;
   align-items: center;
-  justify-content: baseline;
-  flex-wrap: no-wrap;
+  justify-content: space-between;;
+  flex-wrap: wrap;
 }
 .flex-inline div{
-  display: block;
   width: auto;
 }
+h3,p{color:gray}
 p{
-  color: gray;
+  font-size: 18px;
+}
+label{
+  font-weight: normal;
 }
 ul{
   padding:0px;
 }
-h1, h2{ color: #85D0CC !important}
+h1, h2{color: #85D0CC !important}
 .btn{
   background-color: #F9A01B;
   border-color: #F9A01B;
@@ -43,6 +46,10 @@ h1, h2{ color: #85D0CC !important}
   line-height: 46px;
   margin: 0px 50px 0px 0px;
   color: #85D0CC
+}
+.img-product{
+  display: block;
+  margin: auto;
 }
 /*tabs*/
 .tabs-product{
@@ -131,6 +138,10 @@ ul.nav.nav-tabs.tabs-product {
     display: flex;
     justify-content: center;
 }
+/*footer*/
+footer{
+  padding: 3em 0px;
+}
 footer a{
   padding-right:10px;
   color: #85D0CC;
@@ -160,11 +171,16 @@ footer .elementos{
 footer p{
   margin: 0px;
 }
+footer ul{
+  margin: 0px;
+}
 footer ul:last-of-type{
   float: right;
-  background-color: red;
 }
-
+.rss{
+  width: 25px;
+  height: 25px;
+}
 /*form*/
 .form-vertical *{
   width: 100%;
@@ -202,6 +218,7 @@ input:not(.btn) {
 }
 label{
   color: #85D0CC;
+  display:block;
 }
 .paso .price{
   display: flex;
@@ -209,12 +226,96 @@ label{
   justify-content: center;
   margin-bottom: 2em;
 }
+.price h3{
+  font-weight: normal;
+}
 input:placholder{
   color: gray;
 }
 .form_horizontal input{
   width: auto !important;
 }
-.dispositivos{
+.salidas{
   width: 100%
+}
+.datos-hogar div:not(:last-child){
+  width: 40%;
+  padding-right: 30px;
+}
+.datos-hogar input{
+  width: 100%;
+}
+/*inc dispositivos*/
+.subtitulo-formulario{
+  text-align: center;
+  font-weight: normal;
+}
+.salidas input{
+  border-color:transparent !important;
+  width: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.salidas{
+  flex-wrap: wrap;
+}
+.salida{
+  width: 33% !important;
+  padding: 10px 30px;
+}
+.salida label, .salida p{
+  margin: 0px;
+}
+.btn-number{
+  background-size: contain;
+  text-indent: -9999px;
+  width: 20px!important;
+  height:20px;
+  cursor: pointer;
+
+}
+#btn-inc{
+  background-image: url(../../images/icn/inc.svg);
+}
+#btn-dec {
+  background-image: url(../../images/icn/dec.svg);
+}
+.img-salida{
+  width: 50px;
+  background-color: #7ADED4;
+  padding: 10px;
+  border-radius: 100px;
+  float: left;
+  margin-right: 10px;
+}
+/*POPUP*/
+.pop{
+  display:none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.pop .wrapper{
+  background-color: white;
+  width: 60%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 3em 2em;
+  box-shadow: 2px;
+  border-radius: 3px;
+}
+.grad{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7aded4+0,7aded4+0,d8ede9+100&0.5+0,0.5+100 */
+background: -moz-linear-gradient(left,  rgba(122,222,212,0.5) 0%, rgba(216,237,233,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(122,222,212,0.5) 0%,rgba(216,237,233,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(122,222,212,0.5) 0%,rgba(216,237,233,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#807aded4', endColorstr='#80d8ede9',GradientType=1 ); /* IE6-9 */
+
 }

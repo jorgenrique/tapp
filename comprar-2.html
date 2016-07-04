@@ -14,10 +14,9 @@
 	<body>
 		<script type="text/javascript">
 		$(function() {
+			$(".number").prepend('<div class="btn-number" id="btn-dec">-</div>').append('<div class="btn-number" id="btn-inc">+</div>');
 
-			$(".dispositivo").append('<div class="inc button">+</div><div class="dec button">-</div>');
-
-			$(".button").on("click", function() {
+			$(".btn-number").on("click", function() {
 
 				var $button = $(this);
 				var oldValue = $button.parent().find("input").val();
@@ -59,10 +58,10 @@
 		<div class="paso">
 			<div class="row explicacion-compra">
 				<div class="container">
-					<div class="col-lg-6 col-lg-offset-3">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
 	          <h1>Hola</h1>
 	          <p>
-							Solo te falta decirnos a donde enviarlo y darnos un par de detalles de tu hogar,así la app te llegara lista para funcionar.
+							Solo te falta decirnos a donde enviarlo y darnos un par de detalles de tu hogar, así la app te llegara lista para funcionar.
 	          </p>
 	        </div>
 				</div>
@@ -81,7 +80,7 @@
 							<div class="datos-hogar flex-inline">
 								<div class="">
 									<label for="">Dirección (Calle y número)</label>
-									<input type="text" name="nombre" placeholder="Helena">
+									<input type="text" name="nombre" placeholder="Calle y dirección">
 								</div>
 								<div class="">
 									<label for="">Ciudad y país</label>
@@ -92,13 +91,66 @@
 									<input type="date" name="fecha" placholder="dd/mm/yy">
 								</div>
 							</div>
-							<div class="dispositivos flex-inline">
-								<div class="dispositivo">
-									<label for=""></label>
-									<input type="text" name="name" value="1">
+							<h2 class="subtitulo-formulario">Puntos de agua</h2>
+							<div class="salidas flex-inline">
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/ducha.svg" alt="" /><p>
+										Ducha
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="1">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/grifo.svg" alt="" /><p>
+										Grifo
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="1">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/videt.svg" alt="" /><p>
+										Videt
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="1">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/vater.svg" alt="" /><p>
+										Vater
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="1">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/lavadora.svg" alt="" /><p>
+										Lavadora
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="0">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/lavaplatos.svg" alt="" /><p>
+										Lavaplatos
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="0">
+										</div>
+								</div>
+								<div class="salida flex-inline">
+									<label class="flex-inline" for=""><img class="img-salida" src="images/svg/Otro.svg" alt="" /><p>
+										Otro
+										</p></label>
+										<div class="number flex-inline">
+											<input type="text" name="name" value="0">
+										</div>
 								</div>
 							</div>
-	            <input class="btn" type="button" name="datos_tarjeta" value="Comprar">
+	            <input class="btn" type="submit" name="datos_tarjeta" value="CONFIRMAR" formaction="crear-cuenta.html">
 	          </form>
 	        </div>
 				</div>
@@ -116,9 +168,9 @@
 								Tapp 2016
 							</p>
 							<ul>
-								<li><a href="#" id="ins"></a></li>
-								<li><a href="#"id="fb"></a></li>
-								<li><a href="#" id="mail"></a></li>
+								<li><a href="#" id="ins"><img class="rss" src="images/icn/ins.svg" alt="" /></a></li>
+								<li><a href="#" id="fb"><img class="rss" src="images/icn/fb.svg" alt="" /></a></li>
+								<li><a href="#" id="mail"><img class="rss" src="images/icn/mail.svg" alt="" /></a></li>
 							</ul>
 						</div>
 					</div>
