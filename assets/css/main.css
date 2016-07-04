@@ -1,9 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("font-awesome.min.css");
 /*
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Overflow by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1571,8 +1571,6 @@ button,
       border-bottom-color: rgba(53, 184, 143, 0.5); }
   #footer .icons {
     padding: 0.75em 2em 0.75em 2em;
-    border-radius: 3em;
-    border: solid 1px #fff;
     display: inline-block;
     margin: 0 0 3em 0; }
   #footer .copyright {
@@ -1880,5 +1878,14 @@ button,
       display: none; }
   .poptrox-popup .closer {
     opacity: 0.5; } }
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:target {
+  color: #fff;
+  background-color: #F9A01B;
+  border-color: transparent;
+  font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */
