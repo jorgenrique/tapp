@@ -284,8 +284,15 @@ input:placholder{
 .form_horizontal input{
     width: auto !important;
 }
+.salidas-form .btn{
+    margin-bottom:40px;
+}
 .salidas{
-    width: 100%
+    width: 100%;
+    margin-bottom:50px;
+}
+.datos-hogar{
+    margin:30px auto 10px;
 }
 .datos-hogar div:not(:last-child){
     width: 40%;
@@ -298,6 +305,7 @@ input:placholder{
 .subtitulo-formulario{
     text-align: center;
     font-weight: normal;
+    margin:70px auto 40px;
 }
 .salidas input{
     border-color:transparent !important;
